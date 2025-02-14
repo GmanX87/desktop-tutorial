@@ -1,18 +1,15 @@
-# Minimum CMake version required
+# Minimum required CMake version
 cmake_minimum_required(VERSION 3.10)
 
-# Project name and programming language
+# Project name and C++ language
 project(MyProject CXX)
 
-# Set the C++ standard version
+# Set the C++ standard to be used
 set(CMAKE_CXX_STANDARD 14)
 
-# Set the Ninja generator explicitly
-set(CMAKE_GENERATOR "Ninja")
+# Optionally, you can specify a custom build directory here
+# set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 
-# Set the make program explicitly if needed
-set(CMAKE_MAKE_PROGRAM "C:/Program Files/Ninja/ninja.exe")
-
-# Define the executable target
+# Add your executable (e.g., main.cpp) here
 add_executable(my_executable main.cpp)
 
