@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_C_COMPILER "C:/msys64/ucrt64/bin/gcc.exe")
 set(CMAKE_CXX_COMPILER "C:/msys64/ucrt64/bin/g++.exe")
 
+# Set the path to the Ninja build system
+set(CMAKE_MAKE_PROGRAM "C:/msys64/mingw64/bin/ninja.exe")
+
 # Specify the project and other configurations
 project(MyProject VERSION 1.0)
 
