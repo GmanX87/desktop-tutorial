@@ -1,15 +1,12 @@
-# Minimum required CMake version
 cmake_minimum_required(VERSION 3.10)
 
-# Project name and C++ language
-project(MyProject CXX)
+# Set the project name and version
+project(MyProject VERSION 1.0)
 
-# Set the C++ standard to be used
-set(CMAKE_CXX_STANDARD 14)
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Optionally, you can specify a custom build directory here
-# set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
-
-# Add your executable (e.g., main.cpp) here
-add_executable(my_executable main.cpp)
+# Add the executable
+add_executable(MyProject main.cpp)
 
